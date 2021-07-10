@@ -1,0 +1,261 @@
+<style>
+    .slidecontainer {
+      width: 100%;
+    }
+    
+    .EngineSlider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 25px;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .EngineSlider:hover {
+      opacity: 1;
+    }
+    
+    .EngineSlider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: #0011ff;
+      cursor: pointer;
+    }
+    
+    .EngineSlider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #0011ff;
+      cursor: pointer;
+    }
+    </style>
+                      
+    </head>
+    <body>
+    
+    <h1>Control Panel</h1>
+    <form action="Control-Php.Php" method="post">
+    
+    <p>Engine-1</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine1" min="0" max="100" value="50" class="EngineSlider" id="Engine1">
+      <p>Value: <span id="out1"></span></p>
+    </div>
+    <br><br>
+    
+    <p>Engine-2</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine2" min="0" max="100" value="50" class="EngineSlider" id="Engine2">
+      <p>Value: <span id="out2"></span></p>
+    </div>
+    <br><br>
+    
+    <p>Engine-3</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine3" min="0" max="100" value="50" class="EngineSlider" id="Engine3">
+      <p>Value: <span id="out3"></span></p>
+    </div>
+    <br><br>
+    
+    <p>Engine-4</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine4" min="0" max="100" value="50" class="EngineSlider" id="Engine4">
+      <p>Value: <span id="out4"></span></p>
+    </div>
+    <br><br>
+    
+    <p>Engine-5</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine5" min="0" max="100" value="50" class="EngineSlider" id="Engine5">
+      <p>Value: <span id="out5"></span></p>
+    </div>
+    <br><br>
+    
+    <p>Engine-6</p>
+    
+    <div class="slidecontainer">
+      <input type="range" name="engine6" min="0" max="100" value="50" class="EngineSlider" id="Engine6">
+      <p>Value: <span id="out6"></span></p>
+    <br><br>
+    <input type="submit" value="Save" id="save" name="save">
+    <input type="submit" value="Run" id="run" name="run">    
+    <script>
+        var engine1 = document.getElementById("Engine1");
+        var output1 = document.getElementById("out1");
+        output1.innerHTML = engine1.value;
+        
+        engine1.oninput = function() {
+          output1.innerHTML = this.value;
+        }
+        </script>
+      
+      
+      
+        <script>
+            var engine2 = document.getElementById("Engine2");
+        var output2 = document.getElementById("out2");
+        output2.innerHTML = engine2.value;
+        
+        engine2.oninput = function() {
+          output2.innerHTML = this.value;
+        }
+          </script>
+      
+      
+      
+          <script>
+             var engine3 = document.getElementById("Engine3");
+        var output3 = document.getElementById("out3");
+        output3.innerHTML = engine3.value;
+        
+        engine3.oninput = function() {
+          output3.innerHTML = this.value;
+        }
+            </script>
+            <script>
+               var engine4 = document.getElementById("Engine4");
+        var output4 = document.getElementById("out4");
+        output4.innerHTML = engine4.value;
+        
+        engine4.oninput = function() {
+          output4.innerHTML = this.value;
+        }
+              </script>
+              <script>
+               var engine5 = document.getElementById("Engine5");
+        var output5 = document.getElementById("out5");
+        output5.innerHTML = engine5.value;
+        
+        engine5.oninput = function() {
+          output5.innerHTML = this.value;
+        }
+                </script>
+      
+                
+                <script>
+                  var engine6 = document.getElementById("Engine6");
+        var output6 = document.getElementById("out6");
+        output6.innerHTML = engine6.value;
+        
+        engine6.oninput = function() {
+          output6.innerHTML = this.value;
+        }
+                  </script>
+
+</div>
+    
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form action="direction-php.Php" method="post">
+
+        <center>
+    
+    
+    
+    
+    
+                <tr>
+                <h1>direction</h1>
+                
+    
+                </tr>
+            </table>
+    
+    
+            <table style="width:60%">
+                <tr>
+                    <td></td>
+                    <td style="text-align : center;">
+                        <input type="submit" 
+                        value="  Forward  "
+                         name="f"
+                          style="color:rgb(0, 0, 0) ;
+                          border: 8px solid #4CAF50;
+                           font-size: 20px;
+                            background: rgba(255, 255, 255, 0.897);">
+                             <br>
+                             <br>
+                            </td>
+                    <td>   </td>
+                </tr> </div>
+            
+    
+                <tr>
+                    <td style="text-align : right;">
+                         <input type="submit"
+                          value="  Left  " 
+                          name="l"
+                           style=" color:rgb(0, 0, 0);
+                           border: 8px solid #4CAF50;
+                            font-size: 20px;
+                             background: rgba(255, 255, 255, 0.897);">
+                       </td>
+                    
+                    <td style="text-align : center;">
+                         <input type="submit"
+                          value="  Stop  "
+                           name="s"
+                         style=" color:rgb(0, 0, 0);
+                           border: 8px solid #4CAF50; 
+                           font-size: 20px;
+                            background: rgba(255, 255, 255, 0.897);"> 
+                         <br>
+                         <br>   
+                        </td>
+    
+    
+                    <td style="text-align : left;">
+                           <input type="submit"
+                            value="  Right  "
+                             name="r" 
+                             style=" color:rgb(0, 0, 0) ;
+                              border: 8px solid #4CAF50;
+                              font-size: 20px; background: rgba(255, 255, 255, 0.897);">
+                               </td>
+                </tr>  </div>
+    
+    
+    
+                <tr>
+                    
+                    <td></td>
+                    
+                    <td style="text-align : center;">
+                        <input type="submit"
+                         value="  Backward  "
+                          name="b" 
+                          style="color:rgb(0, 0, 0);
+                           border: 8px solid #4CAF50;
+                           font-size: 20px;
+                            background: rgba(255, 251, 251, 0.897);">
+                    <td>
+                    </td>
+                    
+                </tr> </div>
+                
+                <div>
+    
+                
+                
+            </table>
+    
+        </center>
+    </form>
+    
+    </body>
+    </html>
+    
